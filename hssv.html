@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Hồ Sơ Sinh Viên - Trường HPC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hệ Thống Quản Lý Hồ Sơ Sinh Viên</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#add">Thêm Sinh Viên</a></li>
+                <li><a href="#list">Danh Sách Sinh Viên</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Trang Chủ -->
+    <main id="home">
+        <section>
+            <h2>Chào mừng đến với hệ thống quản lý hồ sơ sinh viên của trường HPC!</h2>
+            <p>Hệ thống này giúp bạn quản lý thông tin của tất cả sinh viên trong trường một cách dễ dàng.</p>
+        </section>
+    </main>
+
+    <!-- Thêm Sinh Viên -->
+    <main id="add">
+        <section>
+            <h2>Thông Tin Sinh Viên</h2>
+            <form action="#" method="POST">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="id">Mã Sinh Viên:</label>
+                <input type="text" id="id" name="id" required>
+
+                <label for="dob">Ngày Sinh:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="course">Khóa Học:</label>
+                <input type="text" id="course" name="course" required>
+
+                <label for="address">Địa Chỉ:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <button type="submit">Thêm Sinh Viên</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Danh Sách Sinh Viên -->
+    <main id="list">
+        <section>
+            <h2>Danh Sách Sinh Viên</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã Sinh Viên</th>
+                        <th>Họ và Tên</th>
+                        <th>Ngày Sinh</th>
+                        <th>Khóa Học</th>
+                        <th>Địa Chỉ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SV001</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>01/01/2000</td>
+                        <td>Công Nghệ Thông Tin</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td>SV002</td>
+                        <td>Trần Thị B</td>
+                        <td>12/02/1999</td>
+                        <td>Quản Trị Kinh Doanh</td>
+                        <td>Hồ Chí Minh</td>
+                    </tr>
+                    <tr>
+                        <td>SV003</td>
+<td>Phạm Minh C</td>
+                        <td>22/03/2001</td>
+                        <td>Marketing</td>
+                        <td>Đà Nẵng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Trường HPC. Tất cả quyền được bảo vệ.</p>
+    </footer>
+
+</body>
+</html>
